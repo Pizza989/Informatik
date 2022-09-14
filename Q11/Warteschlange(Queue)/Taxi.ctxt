@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Taxi
+comment1.params=kennzeichen\ fahrname
+comment1.target=Taxi(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getKennzeichen()
+comment3.params=kennzeichen
+comment3.target=void\ setKennzeichen(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getFahrname()
+comment5.params=fahrname
+comment5.target=void\ setFahrname(java.lang.String)
+numComments=6

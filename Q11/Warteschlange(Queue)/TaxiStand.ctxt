@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=TaxiStand
+comment1.params=anzahl\ taxis
+comment1.target=TaxiStand(int,\ Taxi[])
+comment2.params=
+comment2.target=java.lang.Integer\ getAntahl()
+comment3.params=taxi
+comment3.target=void\ anstellen(Taxi)
+comment4.params=
+comment4.target=void\ aufr\u00FCcken()
+comment5.params=
+comment5.target=Taxi\ abfahren()
+numComments=6
