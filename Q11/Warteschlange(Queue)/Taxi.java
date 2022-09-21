@@ -1,4 +1,3 @@
-
 public class Taxi
 {
     String kennzeichen;

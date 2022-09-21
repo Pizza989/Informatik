@@ -3,16 +3,12 @@ public class TaxiStand
     int anzahl;
     Taxi[] warteschlange;
 
-    public TaxiStand(int anzahl, Taxi... taxis){
+    public TaxiStand(int anzahl){
         this.anzahl = anzahl;
         this.warteschlange = new Taxi[this.anzahl];
-        
-        for (Taxi t : taxis) {
-            this.anstellen(t);
-        }
     }
 
-    Integer getAntahl(){
+    int getAntahl(){
         return this.anzahl;
     }
 
@@ -26,9 +22,11 @@ public class TaxiStand
     }
 
     void aufrücken(){
-        for (int i = 0; i < this.warteschlange.length; i ++) {
+        for (int i = 0; i < this.warteschlange.length - 1; i++) {
+            if (this.warteschlange[i] == null) break;
             this.warteschlange[i] = this.warteschlange[i + 1];
         }
+        this.warteschlange[this.warteschlange.length - 1] = null;
     }
 
     Taxi abfahren(){
