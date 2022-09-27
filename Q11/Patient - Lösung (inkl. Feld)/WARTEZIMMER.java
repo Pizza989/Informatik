@@ -20,18 +20,15 @@ public class WARTEZIMMER {
 
     public void einfügen(PATIENT p) {
         PATIENT aktueller_patient = this.anfang;
-
-        while (aktueller_patient.getNachfolger() != null) {
+        
+        while (aktueller_patient != null) {
             aktueller_patient = aktueller_patient.getNachfolger();
         }
 
-        aktueller_patient.setNachfolger(p);
+        aktueller_patient = p;
     }
 
     public void entfernen() {
-        PATIENT aktueller_patient = this.anfang;
-        for (int i = 0; i < this.anzahl; i++) {
-            aktueller_patient = aktueller_patient.nachfolger()
-        }
+        this.anfang = this.anfang.getNachfolger();
     }
 }

@@ -1,12 +1,12 @@
 #BlueJ class context
 comment0.target=WARTEZIMMER
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Wartezimmer.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Wartezimmer.\r\n\ \r\n\ @author\ (Ihr\ Name)\r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
 comment1.params=
 comment1.target=WARTEZIMMER()
-comment2.params=p
-comment2.target=void\ hinsetzen(PATIENT)
-comment3.params=
-comment3.target=PATIENT\ drankommen()
+comment2.params=
+comment2.target=int\ getAnzahl()
+comment3.params=p
+comment3.target=void\ einf\u00FCgen(PATIENT)
 comment4.params=
-comment4.target=int\ getAnzahl()
+comment4.target=void\ entfernen()
 numComments=5
