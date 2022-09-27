@@ -30,9 +30,8 @@ public class WARTEZIMMER {
 
     public void entfernen() {
         PATIENT aktueller_patient = this.anfang;
-
-        while (aktueller_patient.getNachfolger() != null) {
-            aktueller_patient.setNachfolger(aktueller_patient);
+        for (int i = 0; i < this.anzahl; i++) {
+            aktueller_patient = aktueller_patient.nachfolger()
         }
     }
 }

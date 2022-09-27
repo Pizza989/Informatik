@@ -19,7 +19,7 @@ public class PATIENT
 
     // Getter- und Setter-Methoden
     public void setName(String n) {
-        name = n;        
+        name = n;    
     }
     
     public String getName() {
