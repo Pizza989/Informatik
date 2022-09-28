@@ -1,16 +1,15 @@
 
 /**
- * Beschreiben Sie hier die Klasse Wartezimmer.
+ * Beschreiben Sie hier die Klasse GeketteteListe.
  * 
  * @author (Ihr Name)
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class WARTEZIMMER {
+public class GeketteteListe {
+    private Knoten anfang;
     private int anzahl;
-    private PATIENT anfang;
 
-    public WARTEZIMMER() {
-        this.anzahl = 0;
+    public GeketteteListe() {
         this.anfang = null;
     }
 
@@ -18,25 +17,20 @@ public class WARTEZIMMER {
         return anzahl;
     }
 
-    public void einfügen(PATIENT p) {
+    public void einfügen(Knoten objekt) {
         if (this.anfang == null) {
-            this.anfang = p;
+            this.anfang = objekt;
         } else {
-            PATIENT aktueller_patient = this.anfang;
+            Knoten aktueller_patient = this.anfang;
 
             while (aktueller_patient.getNachfolger() != null) {
-                if (aktueller_patient == p) {
-                    System.err.println("p existiert schon in der Liste und wird nicht eingefügt");
-                    return;
-                }
                 aktueller_patient = aktueller_patient.getNachfolger();
             }
 
-            aktueller_patient.setNachfolger(p);
+            aktueller_patient.setNachfolger(objekt);
 
         }
         this.anzahl++;
-
     }
 
     public void entfernen() {
