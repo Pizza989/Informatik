@@ -8,7 +8,7 @@ public class Playlist {
     }
 
     public void starten() {
-        Song song = this.songs.getAnfang();
+        Song song = this.songs.getAnfang().objekt;
         this.musikplayer.starten(String.format("%s-%s.mp3", song.getInterpret(), song.getTitle()));
     }
 
