@@ -6,7 +6,7 @@
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class Warteschlange {
-    private Song anfang;
+    private Knoten anfang;
     private int anzahl;
 
     public Warteschlange() {
@@ -18,7 +18,7 @@ public class Warteschlange {
     }
 
     public Knoten getAnfang() {
-        return this.anfang.objekt;
+        return this.anfang;
     }
 
     public void einfügen(Knoten objekt) {
