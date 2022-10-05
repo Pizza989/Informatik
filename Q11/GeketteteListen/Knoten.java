@@ -1,15 +1,8 @@
-
-/**
- * Beschreiben Sie hier die Klasse Knoten.
- * 
- * @author (Ihr Name)
- * @version (eine Versionsnummer oder ein Datum)
- */
 public class Knoten {
     private Knoten nachfolger;
-    public Knoten objekt;
+    public DatenElement objekt;
 
-    public Knoten(Knoten objekt) {
+    public Knoten(DatenElement objekt) {
         this.nachfolger = null;
         this.objekt = objekt;
     }
@@ -22,7 +15,7 @@ public class Knoten {
         this.nachfolger = nachfolger;
     }
 
-    public Knoten getObjekt() {
+    public DatenElement getObjekt() {
         return objekt;
     }
 

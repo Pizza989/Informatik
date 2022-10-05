@@ -1,10 +1,3 @@
-
-/**
- * Beschreiben Sie hier die Klasse GeketteteListe.
- * 
- * @author (Ihr Name)
- * @version (eine Versionsnummer oder ein Datum)
- */
 public class GeketteteListe {
     private Knoten anfang;
     private int anzahl;
