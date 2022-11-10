@@ -31,8 +31,12 @@ public class SONG implements DATENELEMENT
     public void setTitel(String t) {
         titel = t;
     }
-
+    
+    public String getRepr() {
+        return interpret + ": " + titel;
+    }
+    
     public void ausgeben() {
-        System.out.println(interpret + ": " + titel);
+        System.out.println(this.getRepr());
     }
 }

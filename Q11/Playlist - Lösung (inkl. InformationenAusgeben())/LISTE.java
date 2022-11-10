@@ -13,16 +13,20 @@ public class LISTE
         anfang = null;
     }
 
+    public void hinzufügen(DATENELEMENT daten) {
+        if (this.getLänge() == 0) this.anfang = new KNOTEN(daten);
+        else this.getElement(this.getLänge() - 1).setNachfolger(new KNOTEN(daten));
+    }
+
     public void einfügen(int index, DATENELEMENT daten) throws IndexOutOfBoundsException {
         KNOTEN k = new KNOTEN(daten);
-        if (this.getLänge() != 0) {
-            index = (index % this.getLänge()) + index;
-        } else {
-            if (index == 0)
-                this.anfang = k;
-            else
-                throw new IndexOutOfBoundsException(index);
+        if (this.getLänge() == 0) {
+            this.anfang = k;
             return;
+        } else if (index > this.getLänge()) {
+            throw new IndexOutOfBoundsException(index);
+        } else if (index < 0) {
+            index %= -this.getLänge();
         }
 
         KNOTEN davor = this.getElement(index);
@@ -42,7 +46,7 @@ public class LISTE
         if (index == 0) {
             return this.anfang;
         }
-        return this.getElement(index - 1, aktuell.getNachfolger());
+        return this.getElement(index - 1, aktuell.getNachfolger()).getNachfolger();
     }
 
     public KNOTEN getElement(int index) {
@@ -53,7 +57,7 @@ public class LISTE
         KNOTEN aktuell = this.anfang;
         System.out.print("[");
         for (int i = 0; i < this.getLänge(); i++) {
-            System.out.printf("%s, ", aktuell.getClass().getName());
+            System.out.printf("%s, ", "name");
             aktuell = aktuell.getNachfolger();
         }
         System.out.print("]\n");
