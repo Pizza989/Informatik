@@ -11,7 +11,7 @@ public class ABSCHLUSS extends LISTENELEMENT
         
     }
     
-    public KNOTEN hintenEinfügen(KNOTEN k) {
+    public LISTENELEMENT hintenEinfügen(KNOTEN k) {
         k.setNachfolger(this);
         return k;
     }

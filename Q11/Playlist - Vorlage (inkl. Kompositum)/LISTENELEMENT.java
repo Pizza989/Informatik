@@ -9,4 +9,5 @@
 public abstract class LISTENELEMENT
 {   
     public abstract int getRestlänge();
+    public abstract LISTENELEMENT hintenEinfügen(KNOTEN k);
 }

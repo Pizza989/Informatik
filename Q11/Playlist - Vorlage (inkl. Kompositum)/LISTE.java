@@ -27,6 +27,10 @@ public class LISTE
         this.anfang = this.anfang.hintenEinfügen(k);
     }
     
+    public void hintenEinfügen(DATENELEMENT daten) {
+        this.anfang = this.anfang.hintenEinfügen(new KNOTEN(daten));
+    }
+    
     public int getLänge() {
         return this.anfang.getRestlänge();
     }
