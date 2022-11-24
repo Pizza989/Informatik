@@ -2,7 +2,7 @@
 /**
  * Beschreiben Sie hier die Klasse Wartezimmer.
  * 
- * @author (Ihr Name) 
+ * @author (Ihr Name)
  * @version (eine Versionsnummer oder ein Datum)
  */
 public class LISTE
@@ -36,8 +36,11 @@ public class LISTE
         k.setNachfolger(danach);
     }
 
-    public KNOTEN entfernen() {
-        KNOTEN nächster = anfang;
+    public KNOTEN entfernen(int index) {
+        KNOTEN k = this.getElement(index - 1);
+        KNOTEN davor = k;
+        
+        davor.setNachfolger(t)
         anfang = anfang.getNachfolger();
         return nächster;
     }

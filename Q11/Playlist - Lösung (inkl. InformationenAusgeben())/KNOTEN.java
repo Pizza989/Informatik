@@ -54,5 +54,4 @@ public class KNOTEN
             daten.ausgeben();
         }
     }
- 
 }
